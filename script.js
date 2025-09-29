@@ -80,28 +80,39 @@ if (document.readyState === "loading") {
 
 // ---------- Contact Form ----------
 const contactForm = document.getElementById("contact-form");
+const statusMsg = document.getElementById("form-status");
 
 if (contactForm) {
-  contactForm.addEventListener("submit", (e) => {
+  contactForm.addEventListener("submit", async (e) => {
     e.preventDefault();
 
-    // Get form values
-    const name = document.getElementById("name").value;
-    const email = document.getElementById("email").value;
-    const message = document.getElementById("message").value;
+    statusMsg.textContent = "Sending...";
+    statusMsg.className = "form-status pending";
 
-    // Simple validation
-    if (name && email && message) {
-      // Show success message
-      alert(`Thank you, ${name}! Your message has been sent. I will get back to you soon at ${email}.`);
+    const data = new FormData(contactForm);
 
-      // Reset form
-      contactForm.reset();
-    } else {
-      alert("Please fill in all fields.");
+    try {
+      const response = await fetch(contactForm.action, {
+        method: contactForm.method,
+        body: data,
+        headers: { "Accept": "application/json" }
+      });
+
+      if (response.ok) {
+        statusMsg.textContent = "✅ Message sent successfully!";
+        statusMsg.className = "form-status success";
+        contactForm.reset();
+      } else {
+        statusMsg.textContent = "❌ Oops! Something went wrong.";
+        statusMsg.className = "form-status error";
+      }
+    } catch (error) {
+      statusMsg.textContent = "⚠️ Network error. Please try again.";
+      statusMsg.className = "form-status error";
     }
   });
 }
+
 
 // ---------- Smooth Scroll for Internal Links ----------
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {

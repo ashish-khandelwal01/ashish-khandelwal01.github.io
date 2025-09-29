@@ -175,28 +175,6 @@
         <article class="resume" data-page="resume">
             <header><h2 class="article-title">Resume</h2></header>
 
-            <!-- Education Section -->
-            <section class="timeline">
-                <div class="title-wrapper">
-                    <div class="icon-box">
-                        <i class="fas fa-graduation-cap"></i>
-                    </div>
-                    <h3 class="section-title">Education</h3>
-                </div>
-                <ol class="timeline-list">
-                    <li class="timeline-item">
-                        <h4 class="timeline-item-title">Bachelor of Technology (B.Tech)</h4>
-                        <span class="timeline-date">2013 — 2016</span>
-                        <p class="timeline-text">Govt. Engineering College, Ajmer</p>
-                    </li>
-                    <li class="timeline-item">
-                        <h4 class="timeline-item-title">Polytechnic Diploma</h4>
-                        <span class="timeline-date">2010 — 2013</span>
-                        <p class="timeline-text">Govt. Ramchandra Khaitan Polytechnic College, Jaipur</p>
-                    </li>
-                </ol>
-            </section>
-
             <!-- Experience Section -->
             <section class="timeline">
                 <div class="title-wrapper">
@@ -301,6 +279,28 @@
                     </li>
                 </ol>
             </section>
+
+            <!-- Education Section -->
+            <section class="timeline">
+                <div class="title-wrapper">
+                    <div class="icon-box">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <h3 class="section-title">Education</h3>
+                </div>
+                <ol class="timeline-list">
+                    <li class="timeline-item">
+                        <h4 class="timeline-item-title">Bachelor of Technology (B.Tech)</h4>
+                        <span class="timeline-date">2013 — 2016</span>
+                        <p class="timeline-text">Govt. Engineering College, Ajmer</p>
+                    </li>
+                    <li class="timeline-item">
+                        <h4 class="timeline-item-title">Polytechnic Diploma</h4>
+                        <span class="timeline-date">2010 — 2013</span>
+                        <p class="timeline-text">Govt. Ramchandra Khaitan Polytechnic College, Jaipur</p>
+                    </li>
+                </ol>
+            </section>
         </article>
 
         <!-- Projects Section -->
@@ -334,11 +334,7 @@
                     </li>
                 </ol>
             </section>
-            <section class="about-text">
-                <h3 class="section-title">Languages & Interests</h3>
-                <p><strong>Languages:</strong> English, Hindi</p>
-                <p style="margin-top: 10px;"><strong>Interests:</strong> Music, Puzzles, Cubing, Fitness, Stand-up Comedy, Sports</p>
-            </section>
+
         </article>
 
         <!-- Training Section -->
@@ -442,8 +438,12 @@
         <article class="contact" data-page="contact">
             <header><h2 class="article-title">Contact</h2></header>
             <section class="contact-form-section">
-                <form class="contact-form" id="contact-form">
-                    <div class="form-group">
+                <form class="contact-form" id="contact-form"
+                      action="https://formspree.io/f/xyzneppv"
+                      method="POST"
+                >
+
+                <div class="form-group">
                         <label for="name">Name</label>
                         <input type="text" id="name" name="name" required>
                     </div>
@@ -459,6 +459,7 @@
                         <span>Send Message</span>
                         <i class="fas fa-paper-plane"></i>
                     </button>
+                    <p id="form-status" class="form-status"></p>
                 </form>
             </section>
         </article>
