@@ -5,21 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ashish Khandelwal - Automation Architect</title>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.5.1/css/all.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 <main>
     <aside class="sidebar" data-sidebar>
         <div class="sidebar-info">
-            <figure class="avatar-box">
-                <img src="https://via.placeholder.com/150" alt="Ashish Khandelwal">
-            </figure>
             <div class="info-content">
                 <h1 class="name">Ashish Khandelwal</h1>
                 <p class="title">Automation Architect</p>
             </div>
             <button class="toggle-btn" data-sidebar-btn>
-                <i class="fa fa-chevron-down"></i>
+                <span>▼</span>
             </button>
         </div>
 
@@ -27,14 +25,14 @@
             <div class="separator"></div>
             <ul class="contacts-list">
                 <li class="contact-item">
-                    <div class="icon-box">📧</div>
+                    <div class="icon-box">✉</div>
                     <div class="contact-info">
                         <p class="contact-title">Email</p>
                         <a href="mailto:ashishkhandelwal01@hotmail.com" class="contact-link">ashishkhandelwal01@hotmail.com</a>
                     </div>
                 </li>
                 <li class="contact-item">
-                    <div class="icon-box">📱</div>
+                    <div class="icon-box">☎</div>
                     <div class="contact-info">
                         <p class="contact-title">Phone</p>
                         <a href="tel:+16479377852" class="contact-link">647-937-7852</a>
@@ -44,17 +42,21 @@
                     <div class="icon-box">📍</div>
                     <div class="contact-info">
                         <p class="contact-title">Location</p>
-                        <address>Toronto, Ontario, Canada</address>
+                        <address>Toronto, Canada</address>
                     </div>
                 </li>
             </ul>
             <div class="separator"></div>
             <ul class="social-list">
                 <li class="social-item">
-                    <a href="https://linkedin.com/in/ashish-khandelwal-02210059" class="social-link" target="_blank">💼</a>
+                    <a href="https://linkedin.com/in/ashish-khandelwal-02210059" class="social-link" target="_blank">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
                 </li>
                 <li class="social-item">
-                    <a href="https://github.com/ashish-khandelwal01" class="social-link" target="_blank">💻</a>
+                    <a href="https://github.com/ashish-khandelwal01" class="social-link" target="_blank">
+                        <i class="fab fa-github"></i>
+                    </a>
                 </li>
             </ul>
         </div>
@@ -66,6 +68,9 @@
                 <li class="navbar-item"><button class="navbar-link active" data-nav-link>About</button></li>
                 <li class="navbar-item"><button class="navbar-link" data-nav-link>Resume</button></li>
                 <li class="navbar-item"><button class="navbar-link" data-nav-link>Projects</button></li>
+                <li class="navbar-item"><button class="navbar-link" data-nav-link>Training</button></li>
+                <li class="navbar-item"><button class="navbar-link" data-nav-link>Blog</button></li>
+                <li class="navbar-item"><button class="navbar-link" data-nav-link>Contact</button></li>
             </ul>
         </nav>
 
@@ -80,20 +85,68 @@
                 <h3 class="section-title">What I Do</h3>
                 <ul class="service-list">
                     <li class="service-item">
-                        <h4 class="service-item-title">🛠️ Framework Development</h4>
+                        <h4 class="service-item-title">Framework Development</h4>
                         <p class="service-item-text">Design and implement comprehensive automation frameworks using Selenium, Robot Framework, and modern testing tools integrated with CI/CD pipelines.</p>
                     </li>
                     <li class="service-item">
-                        <h4 class="service-item-title">👥 Team Leadership</h4>
+                        <h4 class="service-item-title">Team Leadership</h4>
                         <p class="service-item-text">Lead and mentor automation teams, providing technical guidance and driving best practices across multiple enterprise projects.</p>
                     </li>
                     <li class="service-item">
-                        <h4 class="service-item-title">🏗️ System Architecture</h4>
+                        <h4 class="service-item-title">System Architecture</h4>
                         <p class="service-item-text">Build event-driven automation systems using Kafka, MongoDB, Spring Boot, and React for scalable test execution and reporting.</p>
                     </li>
                     <li class="service-item">
-                        <h4 class="service-item-title">🔄 CI/CD Integration</h4>
+                        <h4 class="service-item-title">CI/CD Integration</h4>
                         <p class="service-item-text">Implement continuous testing pipelines with Azure DevOps, Jenkins, and GitHub Actions for automated deployment validation.</p>
+                    </li>
+                </ul>
+            </section>
+
+            <section class="testimonials">
+                <h3 class="section-title">Testimonials</h3>
+                <ul class="testimonials-list">
+                    <li class="testimonial-item">
+                        <div class="testimonial-card">
+                            <div class="testimonial-header">
+                                <div class="testimonial-avatar">
+                                    <img src="https://via.placeholder.com/60" alt="Client 1">
+                                </div>
+                                <div>
+                                    <h4 class="testimonial-name">John Smith</h4>
+                                    <p class="testimonial-role">Senior Manager, RBC</p>
+                                </div>
+                            </div>
+                            <p class="testimonial-text">Ashish's expertise in automation architecture transformed our testing processes. His innovative approach with event-driven frameworks reduced our test execution time by 60%. A true professional and excellent team leader.</p>
+                        </div>
+                    </li>
+                    <li class="testimonial-item">
+                        <div class="testimonial-card">
+                            <div class="testimonial-header">
+                                <div class="testimonial-avatar">
+                                    <img src="https://via.placeholder.com/60" alt="Client 2">
+                                </div>
+                                <div>
+                                    <h4 class="testimonial-name">Sarah Johnson</h4>
+                                    <p class="testimonial-role">Tech Lead, Cisco Systems</p>
+                                </div>
+                            </div>
+                            <p class="testimonial-text">Working with Ashish was exceptional. He delivered robust automation frameworks that are still being used across multiple teams. His technical knowledge and mentorship helped elevate our entire QA department.</p>
+                        </div>
+                    </li>
+                    <li class="testimonial-item">
+                        <div class="testimonial-card">
+                            <div class="testimonial-header">
+                                <div class="testimonial-avatar">
+                                    <img src="https://via.placeholder.com/60" alt="Client 3">
+                                </div>
+                                <div>
+                                    <h4 class="testimonial-name">Michael Chen</h4>
+                                    <p class="testimonial-role">Engineering Director, Arm Limited</p>
+                                </div>
+                            </div>
+                            <p class="testimonial-text">Ashish delivered an outstanding C# automation framework with seamless CI/CD integration. His attention to detail and ability to solve complex technical challenges made him invaluable to our project.</p>
+                        </div>
                     </li>
                 </ul>
             </section>
@@ -101,7 +154,6 @@
 
         <article class="resume" data-page="resume">
             <header><h2 class="article-title">Resume</h2></header>
-
             <section class="timeline">
                 <div class="title-wrapper">
                     <div class="icon-box">🎓</div>
@@ -255,6 +307,165 @@
                 <p style="margin-top: 10px;"><strong>Interests:</strong> Music, Puzzles, Cubing, Fitness, Stand-up Comedy, Sports</p>
             </section>
         </article>
+
+        <article class="training" data-page="training">
+            <header><h2 class="article-title">Training & Courses</h2></header>
+            <section class="about-text">
+                <p>Passionate about sharing knowledge and helping others grow in automation testing. I conduct comprehensive training sessions on modern automation tools and frameworks.</p>
+            </section>
+            <section class="training-list">
+                <div class="training-item">
+                    <h3 class="training-title">Selenium WebDriver Masterclass</h3>
+                    <p class="training-meta">Duration: 40 hours | Level: Beginner to Advanced</p>
+                    <p class="training-desc">Comprehensive course covering Selenium WebDriver fundamentals, Page Object Model, TestNG, Maven, and CI/CD integration. Includes hands-on projects and real-world scenarios.</p>
+                    <ul class="training-topics">
+                        <li>WebDriver API & Locators</li>
+                        <li>Page Object Model Design Pattern</li>
+                        <li>TestNG Framework & Data-Driven Testing</li>
+                        <li>CI/CD Integration with Jenkins</li>
+                    </ul>
+                </div>
+                <div class="training-item">
+                    <h3 class="training-title">Robot Framework Automation</h3>
+                    <p class="training-meta">Duration: 24 hours | Level: Intermediate</p>
+                    <p class="training-desc">Learn keyword-driven automation testing using Robot Framework. Cover web, API, and database automation with practical examples.</p>
+                    <ul class="training-topics">
+                        <li>Robot Framework Basics & Syntax</li>
+                        <li>SeleniumLibrary for Web Automation</li>
+                        <li>Custom Libraries & Keywords</li>
+                        <li>Reporting & Integration</li>
+                    </ul>
+                </div>
+                <div class="training-item">
+                    <h3 class="training-title">BDD with Cucumber</h3>
+                    <p class="training-meta">Duration: 20 hours | Level: Intermediate</p>
+                    <p class="training-desc">Master Behavior-Driven Development using Cucumber. Learn Gherkin syntax, step definitions, and integration with Selenium.</p>
+                    <ul class="training-topics">
+                        <li>BDD Concepts & Gherkin Language</li>
+                        <li>Cucumber Setup & Configuration</li>
+                        <li>Step Definitions & Hooks</li>
+                        <li>Framework Design & Best Practices</li>
+                    </ul>
+                </div>
+                <div class="training-item">
+                    <h3 class="training-title">CI/CD for Test Automation</h3>
+                    <p class="training-meta">Duration: 16 hours | Level: Advanced</p>
+                    <p class="training-desc">Learn to integrate automation tests in CI/CD pipelines using Jenkins, Azure DevOps, and GitHub Actions.</p>
+                    <ul class="training-topics">
+                        <li>CI/CD Fundamentals</li>
+                        <li>Jenkins Pipeline Configuration</li>
+                        <li>Azure DevOps Integration</li>
+                        <li>GitHub Actions Workflows</li>
+                    </ul>
+                </div>
+            </section>
+        </article>
+
+        <article class="blog" data-page="blog">
+            <header><h2 class="article-title">Blog Posts</h2></header>
+            <section class="blog-posts">
+                <article class="blog-post">
+                    <div class="blog-banner">
+                        <img src="https://via.placeholder.com/400x200" alt="Blog post 1">
+                    </div>
+                    <div class="blog-content">
+                        <span class="blog-category">Automation</span>
+                        <h3 class="blog-title">Building Event-Driven Test Automation with Kafka</h3>
+                        <p class="blog-meta">December 15, 2024 • 8 min read</p>
+                        <p class="blog-excerpt">Learn how to build scalable, event-driven automation frameworks using Apache Kafka, Spring Boot, and modern testing tools. This comprehensive guide covers architecture, implementation, and best practices.</p>
+                        <a href="#" class="blog-link">Read More →</a>
+                    </div>
+                </article>
+                <article class="blog-post">
+                    <div class="blog-banner">
+                        <img src="https://via.placeholder.com/400x200" alt="Blog post 2">
+                    </div>
+                    <div class="blog-content">
+                        <span class="blog-category">CI/CD</span>
+                        <h3 class="blog-title">Mastering CI/CD Integration for Selenium Tests</h3>
+                        <p class="blog-meta">November 28, 2024 • 6 min read</p>
+                        <p class="blog-excerpt">A complete guide to integrating Selenium automation tests with Azure DevOps pipelines. Includes pipeline configuration, parallel execution, and reporting strategies.</p>
+                        <a href="#" class="blog-link">Read More →</a>
+                    </div>
+                </article>
+                <article class="blog-post">
+                    <div class="blog-banner">
+                        <img src="https://via.placeholder.com/400x200" alt="Blog post 3">
+                    </div>
+                    <div class="blog-content">
+                        <span class="blog-category">Best Practices</span>
+                        <h3 class="blog-title">10 Robot Framework Tips for Enterprise Automation</h3>
+                        <p class="blog-meta">October 10, 2024 • 5 min read</p>
+                        <p class="blog-excerpt">Discover advanced Robot Framework techniques used in enterprise projects. From custom libraries to optimization strategies, elevate your automation game.</p>
+                        <a href="#" class="blog-link">Read More →</a>
+                    </div>
+                </article>
+                <article class="blog-post">
+                    <div class="blog-banner">
+                        <img src="https://via.placeholder.com/400x200" alt="Blog post 4">
+                    </div>
+                    <div class="blog-content">
+                        <span class="blog-category">Architecture</span>
+                        <h3 class="blog-title">Designing Scalable Automation Frameworks</h3>
+                        <p class="blog-meta">September 5, 2024 • 10 min read</p>
+                        <p class="blog-excerpt">Deep dive into automation framework architecture. Learn about design patterns, scalability considerations, and maintainability strategies for large-scale projects.</p>
+                        <a href="#" class="blog-link">Read More →</a>
+                    </div>
+                </article>
+            </section>
+        </article>
+
+        <article class="contact" data-page="contact">
+            <header><h2 class="article-title">Contact</h2></header>
+            <section class="contact-form-section">
+                <div class="contact-info-box">
+                    <h3 class="section-title">Get in Touch</h3>
+                    <p class="contact-intro">Have a question about automation, need consulting, or want to discuss training opportunities? Feel free to reach out!</p>
+                    <div class="contact-details">
+                        <div class="detail-item">
+                            <div class="icon-box">✉</div>
+                            <div>
+                                <p class="detail-title">Email</p>
+                                <a href="mailto:ashishkhandelwal01@hotmail.com">ashishkhandelwal01@hotmail.com</a>
+                            </div>
+                        </div>
+                        <div class="detail-item">
+                            <div class="icon-box">☎</div>
+                            <div>
+                                <p class="detail-title">Phone</p>
+                                <a href="tel:+16479377852">+1 (647) 937-7852</a>
+                            </div>
+                        </div>
+                        <div class="detail-item">
+                            <div class="icon-box">📍</div>
+                            <div>
+                                <p class="detail-title">Location</p>
+                                <p>Toronto, Ontario, Canada</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <form class="contact-form" id="contact-form">
+                    <div class="form-group">
+                        <label for="name">Full Name</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="subject">Subject</label>
+                        <input type="text" id="subject" name="subject" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="6" required></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn">Send Message</button>
+                </form>
+            </section>
+        </article>
     </div>
 </main>
 
@@ -266,20 +477,26 @@
     const navLinks = document.querySelectorAll("[data-nav-link]");
     const pages = document.querySelectorAll("[data-page]");
 
-    navLinks.forEach((link, index) => {
+    navLinks.forEach((link) => {
       link.addEventListener("click", () => {
         const pageName = link.innerHTML.toLowerCase();
-        pages.forEach((page, i) => {
+        pages.forEach((page) => {
           if (page.dataset.page === pageName) {
             page.classList.add("active");
-            navLinks[i].classList.add("active");
           } else {
             page.classList.remove("active");
-            navLinks[i].classList.remove("active");
           }
         });
+        navLinks.forEach((l) => l.classList.remove("active"));
+        link.classList.add("active");
         window.scrollTo(0, 0);
       });
+    });
+
+    document.getElementById('contact-form').addEventListener('submit', (e) => {
+      e.preventDefault();
+      alert('Thank you for your message! I will get back to you soon.');
+      e.target.reset();
     });
 </script>
 </body>
